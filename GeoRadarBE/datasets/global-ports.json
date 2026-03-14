@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Port of Shanghai",
+        "country": "China",
+        "lat": 31.2304,
+        "lon": 121.4737
+    },
+    {
+        "name": "Port of Singapore",
+        "country": "Singapore",
+        "lat": 1.2902,
+        "lon": 103.8519
+    },
+    {
+        "name": "Port of Rotterdam",
+        "country": "Netherlands",
+        "lat": 51.9225,
+        "lon": 4.4791
+    },
+    {
+        "name": "Port of Los Angeles",
+        "country": "USA",
+        "lat": 33.7288,
+        "lon": -118.2620
+    },
+    {
+        "name": "Jebel Ali Port",
+        "country": "UAE",
+        "lat": 24.9857,
+        "lon": 55.0272
+    }
+]

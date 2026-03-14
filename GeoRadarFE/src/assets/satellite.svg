@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Solar panel left -->
+  <rect x="2" y="22" width="20" height="20" rx="2" fill="#3b82f6" stroke="#60a5fa" stroke-width="1.5" opacity="0.9"/>
+  <line x1="12" y1="22" x2="12" y2="42" stroke="#93c5fd" stroke-width="0.8" opacity="0.6"/>
+  <line x1="2" y1="32" x2="22" y2="32" stroke="#93c5fd" stroke-width="0.8" opacity="0.6"/>
+  <line x1="7" y1="22" x2="7" y2="42" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="17" y1="22" x2="17" y2="42" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="2" y1="27" x2="22" y2="27" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="2" y1="37" x2="22" y2="37" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Solar panel right -->
+  <rect x="42" y="22" width="20" height="20" rx="2" fill="#3b82f6" stroke="#60a5fa" stroke-width="1.5" opacity="0.9"/>
+  <line x1="52" y1="22" x2="52" y2="42" stroke="#93c5fd" stroke-width="0.8" opacity="0.6"/>
+  <line x1="42" y1="32" x2="62" y2="32" stroke="#93c5fd" stroke-width="0.8" opacity="0.6"/>
+  <line x1="47" y1="22" x2="47" y2="42" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="57" y1="22" x2="57" y2="42" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="42" y1="27" x2="62" y2="27" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+  <line x1="42" y1="37" x2="62" y2="37" stroke="#93c5fd" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Body -->
+  <rect x="24" y="24" width="16" height="16" rx="3" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="4" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="32" cy="32" r="2" fill="#fbbf24"/>
+
+  <!-- Arms connecting panels to body -->
+  <rect x="22" y="30" width="2" height="4" fill="#94a3b8"/>
+  <rect x="40" y="30" width="2" height="4" fill="#94a3b8"/>
+
+  <!-- Antenna -->
+  <line x1="32" y1="24" x2="32" y2="14" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="32" cy="12" r="2.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="32" cy="12" r="1.2" fill="#fca5a5"/>
+</svg>

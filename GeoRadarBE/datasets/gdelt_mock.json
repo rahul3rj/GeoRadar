@@ -1,0 +1,74 @@
+{
+    "articles": [
+        {
+            "url": "https://example.com/mock-1",
+            "title": "Massive airstrike reported in the southern region as the war continues to escalate rapidly.",
+            "seendate": "20260308T150000Z",
+            "domain": "news.com",
+            "sourcecountry": "Ukraine"
+        },
+        {
+            "url": "https://example.com/mock-2",
+            "title": "Additional troops deployed to the frontline amid heavy artillery fire and fighting.",
+            "seendate": "20260308T150500Z",
+            "domain": "news.com",
+            "sourcecountry": "Ukraine"
+        },
+        {
+            "url": "https://example.com/mock-3",
+            "title": "Military claims successfully defending the border against insurgent advance in brutal battle.",
+            "seendate": "20260308T151000Z",
+            "domain": "news.com",
+            "sourcecountry": "Ukraine"
+        },
+        {
+            "url": "https://example.com/mock-4",
+            "title": "Drone strike hits a major supply depot resulting in a massive explosion.",
+            "seendate": "20260308T143000Z",
+            "domain": "worldnews.net",
+            "sourcecountry": "Palestine"
+        },
+        {
+            "url": "https://example.com/mock-5",
+            "title": "Clash erupts between local militia and armed forces near the refugee camp.",
+            "seendate": "20260308T143500Z",
+            "domain": "worldnews.net",
+            "sourcecountry": "Palestine"
+        },
+        {
+            "url": "https://example.com/mock-6",
+            "title": "Air raid sirens sound as another bombing attempt is detected by the defense grid.",
+            "seendate": "20260308T144000Z",
+            "domain": "worldnews.net",
+            "sourcecountry": "Palestine"
+        },
+        {
+            "url": "https://example.com/mock-7",
+            "title": "Terrorist group claims responsibility for the sudden attack on the convoy.",
+            "seendate": "20260308T144500Z",
+            "domain": "worldnews.net",
+            "sourcecountry": "Palestine"
+        },
+        {
+            "url": "https://example.com/mock-8",
+            "title": "Border violence spikes after three people are killed in a midnight raid.",
+            "seendate": "20260308T130000Z",
+            "domain": "africa-news.org",
+            "sourcecountry": "Sudan"
+        },
+        {
+            "url": "https://example.com/mock-9",
+            "title": "Rebel forces continue advancing toward the capital, intensifying the deadly conflict.",
+            "seendate": "20260308T131000Z",
+            "domain": "africa-news.org",
+            "sourcecountry": "Sudan"
+        },
+        {
+            "url": "https://example.com/mock-10",
+            "title": "Helicopter strike levels insurgent hideout along the northern front lines.",
+            "seendate": "20260308T132000Z",
+            "domain": "africa-news.org",
+            "sourcecountry": "Sudan"
+        }
+    ]
+}

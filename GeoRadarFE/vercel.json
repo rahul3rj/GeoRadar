@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://georadar-api.onrender.com/api/$1" },
+    { "source": "/((?!assets|Logo|Human3D|hover|click|favicon).*)", "destination": "/index.html" }
+  ]
+}

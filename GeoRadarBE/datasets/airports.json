@@ -1,0 +1,32 @@
+[
+    {
+        "code": "ATL",
+        "name": "Hartsfield-Jackson",
+        "lat": 33.6407,
+        "lon": -84.4277
+    },
+    {
+        "code": "PEK",
+        "name": "Beijing Capital",
+        "lat": 40.0798,
+        "lon": 116.6031
+    },
+    {
+        "code": "DXB",
+        "name": "Dubai International",
+        "lat": 25.2532,
+        "lon": 55.3657
+    },
+    {
+        "code": "LHR",
+        "name": "London Heathrow",
+        "lat": 51.4700,
+        "lon": -0.4542
+    },
+    {
+        "code": "HND",
+        "name": "Tokyo Haneda",
+        "lat": 35.5494,
+        "lon": 139.7798
+    }
+]

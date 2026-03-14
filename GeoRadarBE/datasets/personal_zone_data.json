@@ -1,0 +1,700 @@
+{
+    "countries": [
+        {
+            "country": "United States",
+            "iso": "US",
+            "disputed_borders": [],
+            "military_rank": 1,
+            "emergency": {
+                "police": "911",
+                "ambulance": "911",
+                "fire": "911",
+                "disaster": "1-800-621-FEMA"
+            }
+        },
+        {
+            "country": "Canada",
+            "iso": "CA",
+            "disputed_borders": [],
+            "military_rank": 27,
+            "emergency": {
+                "police": "911",
+                "ambulance": "911",
+                "fire": "911",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "United Kingdom",
+            "iso": "GB",
+            "disputed_borders": [],
+            "military_rank": 6,
+            "emergency": {
+                "police": "999",
+                "ambulance": "999",
+                "fire": "999",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Germany",
+            "iso": "DE",
+            "disputed_borders": [],
+            "military_rank": 14,
+            "emergency": {
+                "police": "110",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "France",
+            "iso": "FR",
+            "disputed_borders": [],
+            "military_rank": 7,
+            "emergency": {
+                "police": "17",
+                "ambulance": "15",
+                "fire": "18",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Italy",
+            "iso": "IT",
+            "disputed_borders": [],
+            "military_rank": 10,
+            "emergency": {
+                "police": "112",
+                "ambulance": "118",
+                "fire": "115",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Spain",
+            "iso": "ES",
+            "disputed_borders": [],
+            "military_rank": 18,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Russia",
+            "iso": "RU",
+            "disputed_borders": [
+                "Ukraine",
+                "Georgia"
+            ],
+            "military_rank": 2,
+            "emergency": {
+                "police": "102",
+                "ambulance": "103",
+                "fire": "101",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Ukraine",
+            "iso": "UA",
+            "disputed_borders": [
+                "Russia"
+            ],
+            "military_rank": "N/A",
+            "emergency": {
+                "police": "102",
+                "ambulance": "103",
+                "fire": "101",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "India",
+            "iso": "IN",
+            "disputed_borders": [
+                "China",
+                "Pakistan"
+            ],
+            "military_rank": 4,
+            "emergency": {
+                "police": "112",
+                "ambulance": "102",
+                "fire": "101",
+                "disaster": "108"
+            }
+        },
+        {
+            "country": "China",
+            "iso": "CN",
+            "disputed_borders": [
+                "India",
+                "Taiwan",
+                "Vietnam",
+                "Philippines"
+            ],
+            "military_rank": 3,
+            "emergency": {
+                "police": "110",
+                "ambulance": "120",
+                "fire": "119",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Japan",
+            "iso": "JP",
+            "disputed_borders": [
+                "Russia",
+                "China"
+            ],
+            "military_rank": 8,
+            "emergency": {
+                "police": "110",
+                "ambulance": "119",
+                "fire": "119",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "South Korea",
+            "iso": "KR",
+            "disputed_borders": [
+                "North Korea"
+            ],
+            "military_rank": 5,
+            "emergency": {
+                "police": "112",
+                "ambulance": "119",
+                "fire": "119",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "North Korea",
+            "iso": "KP",
+            "disputed_borders": [
+                "South Korea"
+            ],
+            "military_rank": 36,
+            "emergency": {
+                "police": "N/A",
+                "ambulance": "N/A",
+                "fire": "N/A",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Pakistan",
+            "iso": "PK",
+            "disputed_borders": [
+                "India",
+                "Afghanistan"
+            ],
+            "military_rank": 9,
+            "emergency": {
+                "police": "15",
+                "ambulance": "115",
+                "fire": "16",
+                "disaster": "1122"
+            }
+        },
+        {
+            "country": "Brazil",
+            "iso": "BR",
+            "disputed_borders": [],
+            "military_rank": 12,
+            "emergency": {
+                "police": "190",
+                "ambulance": "192",
+                "fire": "193",
+                "disaster": "199"
+            }
+        },
+        {
+            "country": "Mexico",
+            "iso": "MX",
+            "disputed_borders": [],
+            "military_rank": 32,
+            "emergency": {
+                "police": "911",
+                "ambulance": "911",
+                "fire": "911",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Australia",
+            "iso": "AU",
+            "disputed_borders": [],
+            "military_rank": 19,
+            "emergency": {
+                "police": "000",
+                "ambulance": "000",
+                "fire": "000",
+                "disaster": "132 500"
+            }
+        },
+        {
+            "country": "Indonesia",
+            "iso": "ID",
+            "disputed_borders": [],
+            "military_rank": 13,
+            "emergency": {
+                "police": "110",
+                "ambulance": "118",
+                "fire": "113",
+                "disaster": "129"
+            }
+        },
+        {
+            "country": "Turkey",
+            "iso": "TR",
+            "disputed_borders": [
+                "Greece",
+                "Syria"
+            ],
+            "military_rank": 11,
+            "emergency": {
+                "police": "155",
+                "ambulance": "112",
+                "fire": "110",
+                "disaster": "122"
+            }
+        },
+        {
+            "country": "Israel",
+            "iso": "IL",
+            "disputed_borders": [
+                "Palestine",
+                "Lebanon",
+                "Syria"
+            ],
+            "military_rank": 17,
+            "emergency": {
+                "police": "100",
+                "ambulance": "101",
+                "fire": "102",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Saudi Arabia",
+            "iso": "SA",
+            "disputed_borders": [
+                "Yemen"
+            ],
+            "military_rank": 20,
+            "emergency": {
+                "police": "999",
+                "ambulance": "997",
+                "fire": "998",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Iran",
+            "iso": "IR",
+            "disputed_borders": [],
+            "military_rank": 16,
+            "emergency": {
+                "police": "110",
+                "ambulance": "115",
+                "fire": "125",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Egypt",
+            "iso": "EG",
+            "disputed_borders": [],
+            "military_rank": 15,
+            "emergency": {
+                "police": "122",
+                "ambulance": "123",
+                "fire": "180",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "South Africa",
+            "iso": "ZA",
+            "disputed_borders": [],
+            "military_rank": 26,
+            "emergency": {
+                "police": "10111",
+                "ambulance": "10177",
+                "fire": "10177",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Argentina",
+            "iso": "AR",
+            "disputed_borders": [
+                "United Kingdom (Falkland Islands)"
+            ],
+            "military_rank": 28,
+            "emergency": {
+                "police": "911",
+                "ambulance": "107",
+                "fire": "100",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Chile",
+            "iso": "CL",
+            "disputed_borders": [],
+            "military_rank": 46,
+            "emergency": {
+                "police": "133",
+                "ambulance": "131",
+                "fire": "132",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Peru",
+            "iso": "PE",
+            "disputed_borders": [],
+            "military_rank": 44,
+            "emergency": {
+                "police": "105",
+                "ambulance": "106",
+                "fire": "116",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Colombia",
+            "iso": "CO",
+            "disputed_borders": [],
+            "military_rank": 23,
+            "emergency": {
+                "police": "112",
+                "ambulance": "125",
+                "fire": "119",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Netherlands",
+            "iso": "NL",
+            "disputed_borders": [],
+            "military_rank": 37,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Belgium",
+            "iso": "BE",
+            "disputed_borders": [],
+            "military_rank": 61,
+            "emergency": {
+                "police": "101",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Switzerland",
+            "iso": "CH",
+            "disputed_borders": [],
+            "military_rank": 29,
+            "emergency": {
+                "police": "117",
+                "ambulance": "144",
+                "fire": "118",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Sweden",
+            "iso": "SE",
+            "disputed_borders": [],
+            "military_rank": 25,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Norway",
+            "iso": "NO",
+            "disputed_borders": [],
+            "military_rank": 34,
+            "emergency": {
+                "police": "112",
+                "ambulance": "113",
+                "fire": "110",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Denmark",
+            "iso": "DK",
+            "disputed_borders": [],
+            "military_rank": 41,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Poland",
+            "iso": "PL",
+            "disputed_borders": [],
+            "military_rank": 21,
+            "emergency": {
+                "police": "997",
+                "ambulance": "999",
+                "fire": "998",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Greece",
+            "iso": "GR",
+            "disputed_borders": [
+                "Turkey"
+            ],
+            "military_rank": 30,
+            "emergency": {
+                "police": "100",
+                "ambulance": "166",
+                "fire": "199",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Portugal",
+            "iso": "PT",
+            "disputed_borders": [],
+            "military_rank": 48,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "Thailand",
+            "iso": "TH",
+            "disputed_borders": [],
+            "military_rank": 24,
+            "emergency": {
+                "police": "191",
+                "ambulance": "1669",
+                "fire": "199",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Vietnam",
+            "iso": "VN",
+            "disputed_borders": [
+                "China"
+            ],
+            "military_rank": 22,
+            "emergency": {
+                "police": "113",
+                "ambulance": "115",
+                "fire": "114",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Philippines",
+            "iso": "PH",
+            "disputed_borders": [
+                "China"
+            ],
+            "military_rank": 51,
+            "emergency": {
+                "police": "911",
+                "ambulance": "911",
+                "fire": "911",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Malaysia",
+            "iso": "MY",
+            "disputed_borders": [],
+            "military_rank": 42,
+            "emergency": {
+                "police": "999",
+                "ambulance": "999",
+                "fire": "994",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Singapore",
+            "iso": "SG",
+            "disputed_borders": [],
+            "military_rank": 38,
+            "emergency": {
+                "police": "999",
+                "ambulance": "995",
+                "fire": "995",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Bangladesh",
+            "iso": "BD",
+            "disputed_borders": [
+                "Myanmar"
+            ],
+            "military_rank": 40,
+            "emergency": {
+                "police": "999",
+                "ambulance": "199",
+                "fire": "16163",
+                "disaster": "1090"
+            }
+        },
+        {
+            "country": "Nepal",
+            "iso": "NP",
+            "disputed_borders": [
+                "India"
+            ],
+            "military_rank": "N/A",
+            "emergency": {
+                "police": "100",
+                "ambulance": "102",
+                "fire": "101",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Sri Lanka",
+            "iso": "LK",
+            "disputed_borders": [],
+            "military_rank": 58,
+            "emergency": {
+                "police": "119",
+                "ambulance": "110",
+                "fire": "110",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Afghanistan",
+            "iso": "AF",
+            "disputed_borders": [
+                "Pakistan"
+            ],
+            "military_rank": "N/A",
+            "emergency": {
+                "police": "119",
+                "ambulance": "102",
+                "fire": "119",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Kazakhstan",
+            "iso": "KZ",
+            "disputed_borders": [],
+            "military_rank": 63,
+            "emergency": {
+                "police": "102",
+                "ambulance": "103",
+                "fire": "101",
+                "disaster": "112"
+            }
+        },
+        {
+            "country": "United Arab Emirates",
+            "iso": "AE",
+            "disputed_borders": [],
+            "military_rank": 56,
+            "emergency": {
+                "police": "999",
+                "ambulance": "998",
+                "fire": "997",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Qatar",
+            "iso": "QA",
+            "disputed_borders": [],
+            "military_rank": 64,
+            "emergency": {
+                "police": "999",
+                "ambulance": "999",
+                "fire": "999",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Nigeria",
+            "iso": "NG",
+            "disputed_borders": [],
+            "military_rank": 35,
+            "emergency": {
+                "police": "112",
+                "ambulance": "112",
+                "fire": "112",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Kenya",
+            "iso": "KE",
+            "disputed_borders": [],
+            "military_rank": 68,
+            "emergency": {
+                "police": "999",
+                "ambulance": "999",
+                "fire": "999",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "Morocco",
+            "iso": "MA",
+            "disputed_borders": [
+                "Western Sahara"
+            ],
+            "military_rank": 54,
+            "emergency": {
+                "police": "19",
+                "ambulance": "150",
+                "fire": "15",
+                "disaster": "N/A"
+            }
+        },
+        {
+            "country": "New Zealand",
+            "iso": "NZ",
+            "disputed_borders": [],
+            "military_rank": 72,
+            "emergency": {
+                "police": "111",
+                "ambulance": "111",
+                "fire": "111",
+                "disaster": "N/A"
+            }
+        }
+    ]
+}

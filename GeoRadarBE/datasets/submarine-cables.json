@@ -1,0 +1,17 @@
+[
+    {
+        "name": "SEA-ME-WE 3",
+        "status": "Active",
+        "length_km": 39000
+    },
+    {
+        "name": "FLAG Europe-Asia",
+        "status": "Active",
+        "length_km": 28000
+    },
+    {
+        "name": "Trans-Pacific Express",
+        "status": "Active",
+        "length_km": 18000
+    }
+]

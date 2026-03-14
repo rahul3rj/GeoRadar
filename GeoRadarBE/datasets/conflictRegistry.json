@@ -1,0 +1,197 @@
+[
+    {
+        "name": "Ukraine War",
+        "countries": [
+            "Ukraine",
+            "Russia"
+        ],
+        "lat": 48.3794,
+        "lon": 31.1656,
+        "radius": 800
+    },
+    {
+        "name": "Israel Gaza Conflict",
+        "countries": [
+            "Israel",
+            "Palestine"
+        ],
+        "lat": 31.5,
+        "lon": 34.47,
+        "radius": 200
+    },
+    {
+        "name": "Sudan Civil War",
+        "countries": [
+            "Sudan"
+        ],
+        "lat": 15.6,
+        "lon": 32.5,
+        "radius": 600
+    },
+    {
+        "name": "Myanmar Civil War",
+        "countries": [
+            "Myanmar"
+        ],
+        "lat": 21.9,
+        "lon": 95.9,
+        "radius": 700
+    },
+    {
+        "name": "Syrian Civil War",
+        "countries": [
+            "Syria"
+        ],
+        "lat": 34.8,
+        "lon": 38.9,
+        "radius": 400
+    },
+    {
+        "name": "Yemen Civil War",
+        "countries": [
+            "Yemen"
+        ],
+        "lat": 15.5,
+        "lon": 48.5,
+        "radius": 500
+    },
+    {
+        "name": "DR Congo Conflict",
+        "countries": [
+            "DRC",
+            "Democratic Republic of the Congo",
+            "Rwanda"
+        ],
+        "lat": -4.0,
+        "lon": 21.7,
+        "radius": 1000
+    },
+    {
+        "name": "Somali Civil War",
+        "countries": [
+            "Somalia"
+        ],
+        "lat": 5.1,
+        "lon": 46.1,
+        "radius": 600
+    },
+    {
+        "name": "Sahel Conflict",
+        "countries": [
+            "Mali",
+            "Burkina Faso",
+            "Niger"
+        ],
+        "lat": 14.5,
+        "lon": 0.5,
+        "radius": 800
+    },
+    {
+        "name": "Colombia Conflict",
+        "countries": [
+            "Colombia"
+        ],
+        "lat": 4.5,
+        "lon": -74.2,
+        "radius": 600
+    },
+    {
+        "name": "Mexico Cartel Conflict",
+        "countries": [
+            "Mexico"
+        ],
+        "lat": 23.6,
+        "lon": -102.5,
+        "radius": 1500
+    },
+    {
+        "name": "Afghanistan Conflict",
+        "countries": [
+            "Afghanistan"
+        ],
+        "lat": 33.9,
+        "lon": 67.7,
+        "radius": 600
+    },
+    {
+        "name": "Haiti Gang Violence",
+        "countries": [
+            "Haiti"
+        ],
+        "lat": 18.9,
+        "lon": -72.2,
+        "radius": 200
+    },
+    {
+        "name": "Nigeria Insurgency",
+        "countries": [
+            "Nigeria"
+        ],
+        "lat": 9.0,
+        "lon": 8.6,
+        "radius": 700
+    },
+    {
+        "name": "Kashmir Conflict",
+        "countries": [
+            "India",
+            "Pakistan"
+        ],
+        "lat": 33.7,
+        "lon": 76.5,
+        "radius": 400
+    },
+    {
+        "name": "Korean Peninsula Tensions",
+        "countries": [
+            "North Korea",
+            "South Korea"
+        ],
+        "lat": 38.3,
+        "lon": 127.0,
+        "radius": 400
+    },
+    {
+        "name": "South China Sea Tensions",
+        "countries": [
+            "China",
+            "Philippines",
+            "Taiwan",
+            "Vietnam"
+        ],
+        "lat": 14.8,
+        "lon": 113.8,
+        "radius": 1200
+    },
+    {
+        "name": "Taiwan Strait",
+        "countries": [
+            "Taiwan",
+            "China"
+        ],
+        "lat": 24.3,
+        "lon": 119.5,
+        "radius": 300
+    },
+    {
+        "name": "Maghreb Insurgency",
+        "countries": [
+            "Algeria",
+            "Libya",
+            "Tunisia"
+        ],
+        "lat": 28.0,
+        "lon": 9.0,
+        "radius": 1000
+    },
+    {
+        "name": "Armenia-Azerbaijan Conflict",
+        "countries": [
+            "Armenia",
+            "Azerbaijan"
+        ],
+        "lat": 40.1,
+        "lon": 46.5,
+        "radius": 300
+    }
+]

@@ -1,0 +1,237 @@
+{
+  "success": true,
+  "count": 23,
+  "data": [
+    {
+      "event_id_cnty": "IRN1",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of USA",
+      "actor2": "Military Forces of Iran",
+      "country": "Iran",
+      "latitude": 35.6892,
+      "longitude": 51.389,
+      "fatalities": 850
+    },
+    {
+      "event_id_cnty": "IRN2",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of USA",
+      "actor2": "Military Forces of Iran",
+      "country": "Iran",
+      "latitude": 32.6539,
+      "longitude": 51.666,
+      "fatalities": 250
+    },
+    {
+      "event_id_cnty": "IRN3",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of USA",
+      "actor2": "Military Forces of Iran",
+      "country": "Iran",
+      "latitude": 34.6416,
+      "longitude": 50.8746,
+      "fatalities": 150
+    },
+    {
+      "event_id_cnty": "IRN4",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of USA",
+      "actor2": "Military Forces of Iran",
+      "country": "Iran",
+      "latitude": 29.6103,
+      "longitude": 52.5311,
+      "fatalities": 50
+    },
+    {
+      "event_id_cnty": "IRN5",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of Israel",
+      "actor2": "Military Forces of Iran",
+      "country": "Iran",
+      "latitude": 31.8974,
+      "longitude": 54.3569,
+      "fatalities": 10
+    },
+    {
+      "event_id_cnty": "UKR1",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Russia",
+      "actor2": "Military Forces of Ukraine",
+      "country": "Ukraine",
+      "latitude": 48.72,
+      "longitude": 37.55,
+      "fatalities": 120
+    },
+    {
+      "event_id_cnty": "UKR2",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Russia",
+      "actor2": "Military Forces of Ukraine",
+      "country": "Ukraine",
+      "latitude": 48.46,
+      "longitude": 37.08,
+      "fatalities": 90
+    },
+    {
+      "event_id_cnty": "UKR3",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of Russia",
+      "actor2": "Military Forces of Ukraine",
+      "country": "Ukraine",
+      "latitude": 50,
+      "longitude": 36.23,
+      "fatalities": 25
+    },
+    {
+      "event_id_cnty": "UKR4",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Russia",
+      "actor2": "Military Forces of Ukraine",
+      "country": "Ukraine",
+      "latitude": 47.92,
+      "longitude": 37.78,
+      "fatalities": 65
+    },
+    {
+      "event_id_cnty": "SUD1",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Sudan Armed Forces",
+      "actor2": "Rapid Support Forces",
+      "country": "Sudan",
+      "latitude": 13.7,
+      "longitude": 30.22,
+      "fatalities": 15
+    },
+    {
+      "event_id_cnty": "SUD2",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Sudan Armed Forces",
+      "actor2": "Rapid Support Forces",
+      "country": "Sudan",
+      "latitude": 12.02,
+      "longitude": 29.74,
+      "fatalities": 28
+    },
+    {
+      "event_id_cnty": "SUD3",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Sudan Armed Forces",
+      "actor2": "Rapid Support Forces",
+      "country": "Sudan",
+      "latitude": 15.55,
+      "longitude": 32.53,
+      "fatalities": 12
+    },
+    {
+      "event_id_cnty": "LEB1",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of Israel",
+      "actor2": "Hezbollah Militants",
+      "country": "Lebanon",
+      "latitude": 33.88,
+      "longitude": 35.5,
+      "fatalities": 25
+    },
+    {
+      "event_id_cnty": "LEB2",
+      "event_date": "2026-03-09",
+      "event_type": "Explosions / Remote violence",
+      "actor1": "Military Forces of Israel",
+      "actor2": "Hezbollah Militants",
+      "country": "Lebanon",
+      "latitude": 33.27,
+      "longitude": 35.2,
+      "fatalities": 15
+    },
+    {
+      "event_id_cnty": "LEB3",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Israel",
+      "actor2": "Hezbollah Militants",
+      "country": "Lebanon",
+      "latitude": 33.12,
+      "longitude": 35.25,
+      "fatalities": 10
+    },
+    {
+      "event_id_cnty": "MYA1",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Myanmar",
+      "actor2": "Resistance Fighters",
+      "country": "Myanmar",
+      "latitude": 19.75,
+      "longitude": 96.12,
+      "fatalities": 12
+    },
+    {
+      "event_id_cnty": "MYA2",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Myanmar",
+      "actor2": "Resistance Fighters",
+      "country": "Myanmar",
+      "latitude": 21.92,
+      "longitude": 95.95,
+      "fatalities": 15
+    },
+    {
+      "event_id_cnty": "MYA3",
+      "event_date": "2026-03-09",
+      "event_type": "Violence against civilians",
+      "actor1": "Military Forces of Myanmar",
+      "actor2": "Resistance Fighters",
+      "country": "Myanmar",
+      "latitude": 16.84,
+      "longitude": 96.17,
+      "fatalities": 8
+    },
+    {
+      "event_id_cnty": "BUR1",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Burkina Faso",
+      "actor2": "Jihadist Militants",
+      "country": "Burkina Faso",
+      "latitude": 12.23,
+      "longitude": -1.56,
+      "fatalities": 15
+    },
+    {
+      "event_id_cnty": "BUR2",
+      "event_date": "2026-03-09",
+      "event_type": "Battles",
+      "actor1": "Military Forces of Burkina Faso",
+      "actor2": "Jihadist Militants",
+      "country": "Burkina Faso",
+      "latitude": 13.58,
+      "longitude": -0.05,
+      "fatalities": 10
+    },
+    {
+      "event_id_cnty": "BUR3",
+      "event_date": "2026-03-09",
+      "event_type": "Violence against civilians",
+      "actor1": "Jihadist Militants",
+      "actor2": "",
+      "country": "Burkina Faso",
+      "latitude": 14.11,
+      "longitude": -0.16,
+      "fatalities": 25
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Druzhba Pipeline",
+        "type": "Oil",
+        "status": "Active"
+    },
+    {
+        "name": "Keystone Pipeline",
+        "type": "Oil",
+        "status": "Active"
+    },
+    {
+        "name": "Nord Stream (Damaged)",
+        "type": "Gas",
+        "status": "Inactive"
+    }
+]

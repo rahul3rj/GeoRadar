@@ -1,0 +1,56 @@
+GeoRadar Non-Commercial Open Source License (GNCOSL) v1.0
+
+Copyright (c) 2026 Rahul (rahul3rj). All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+study, copy, modify, merge, and distribute the Software, subject to the
+following conditions:
+
+1. NON-COMMERCIAL USE ONLY
+   The Software may only be used for personal, educational, research, or
+   non-commercial purposes. Any use that generates revenue, is part of a
+   commercial product or service, or is used within a for-profit organization's
+   operations requires a separate commercial license obtained from the
+   copyright holder.
+
+2. ATTRIBUTION REQUIRED
+   All copies, forks, or derivative works must retain this license file, the
+   original copyright notice, and provide clear attribution to the original
+   project and author (rahul3rj/GeoRadar).
+
+3. SHARE-ALIKE (NON-COMMERCIAL)
+   If you modify and redistribute this Software, you must:
+   a) Make the modified source code publicly available.
+   b) Distribute it under the same license terms.
+   c) Clearly indicate what changes were made.
+
+4. NO REBRANDING
+   You may not rebrand, white-label, or present this Software or derivative
+   works as your own original product without explicit written permission
+   from the copyright holder.
+
+5. COMMERCIAL LICENSING
+   For commercial use, SaaS deployment, enterprise integration, or any
+   revenue-generating purpose, contact the copyright holder to obtain a
+   commercial license. Commercial use without a license is strictly prohibited.
+
+6. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+--- Quick Reference ---
+
+| Use Case                              | Allowed?                       |
+|---------------------------------------|--------------------------------|
+| Personal / research / educational     | Yes                            |
+| Self-hosted (non-commercial)          | Yes, with attribution          |
+| Fork and modify (non-commercial)      | Yes, share source changes      |
+| Commercial use / SaaS / rebranding    | Requires commercial license    |
+
+For commercial licensing inquiries, contact: github.com/rahul3rj

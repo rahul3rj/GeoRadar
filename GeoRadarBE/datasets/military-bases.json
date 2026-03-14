@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Ramstein Air Base",
+        "country": "Germany",
+        "lat": 49.435,
+        "lon": 7.599
+    },
+    {
+        "name": "Camp Humphreys",
+        "country": "South Korea",
+        "lat": 36.963,
+        "lon": 127.034
+    },
+    {
+        "name": "Kadena Air Base",
+        "country": "Japan",
+        "lat": 26.355,
+        "lon": 127.767
+    },
+    {
+        "name": "Fort Bragg",
+        "country": "USA",
+        "lat": 35.139,
+        "lon": -79.006
+    },
+    {
+        "name": "Guantanamo Bay",
+        "country": "Cuba",
+        "lat": 19.906,
+        "lon": -75.140
+    }
+]
