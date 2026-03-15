@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { useMap } from './Globe';
 
 /* ═══════════════════════════════════════════════════════
@@ -575,25 +576,28 @@ const ConflictLayer = () => {
     return (
         <div className="conflict-layer" style={{ pointerEvents: 'none' }}>
 
-            {/* ── Connecting line SVG ── */}
-            <svg className="conflict-line-svg">
-                <defs>
-                    <linearGradient id="conflictLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor={severityColor} stopOpacity="0.7" />
-                        <stop offset="100%" stopColor={severityColor} stopOpacity="0.15" />
-                    </linearGradient>
-                </defs>
-                <line
-                    ref={lineRef}
-                    stroke="url(#conflictLineGrad)"
-                    strokeWidth="1"
-                    strokeDasharray="4 3"
-                    style={{ display: selectedEvent ? 'block' : 'none' }}
-                />
-            </svg>
+            {/* ── Connecting line SVG (portaled to body) ── */}
+            {createPortal(
+                <svg className="conflict-line-svg">
+                    <defs>
+                        <linearGradient id="conflictLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor={severityColor} stopOpacity="0.7" />
+                            <stop offset="100%" stopColor={severityColor} stopOpacity="0.15" />
+                        </linearGradient>
+                    </defs>
+                    <line
+                        ref={lineRef}
+                        stroke="url(#conflictLineGrad)"
+                        strokeWidth="1"
+                        strokeDasharray="4 3"
+                        style={{ display: selectedEvent ? 'block' : 'none' }}
+                    />
+                </svg>,
+                document.body
+            )}
 
             {/* ── Event detail popup ── */}
-            {selectedEvent && (
+            {selectedEvent && createPortal(
                 <div
                     className="conflict-popup"
                     style={{
@@ -656,7 +660,8 @@ const ConflictLayer = () => {
                             <div className="cf-popup-notes">{selectedEvent.notes}</div>
                         </>
                     )}
-                </div>
+                </div>,
+                document.body
             )}
 
             {/* ═══════ Styles ═══════ */}
@@ -666,14 +671,14 @@ const ConflictLayer = () => {
                 .conflict-layer { position:absolute; inset:0; z-index:5; }
 
                 .conflict-line-svg {
-                    position:absolute; inset:0; width:100%; height:100%;
-                    pointer-events:none; z-index:5;
+                    position:fixed; inset:0; width:100%; height:100%;
+                    pointer-events:none; z-index:99998;
                 }
 
                 /* ── Popup ── */
                 .conflict-popup {
-                    position: absolute;
-                    z-index: 15;
+                    position: fixed;
+                    z-index: 99999;
                     min-width: 220px;
                     max-width: 320px;
                     padding: 10px 14px;

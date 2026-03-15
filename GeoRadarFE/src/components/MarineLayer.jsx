@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { useMap } from './Globe';
 
 /* ═══════════════════════════════════════════════════════
@@ -520,22 +521,25 @@ const MarineLayer = ({ showPanel = true }) => {
     return (
         <div className="marine-layer" style={{ pointerEvents: 'none' }}>
 
-            {/* ── Connecting line SVG ── */}
-            <svg className="marine-line-svg">
-                <defs>
-                    <linearGradient id="marineLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor={shipColor} stopOpacity="0.7" />
-                        <stop offset="100%" stopColor={shipColor} stopOpacity="0.15" />
-                    </linearGradient>
-                </defs>
-                <line
-                    ref={lineRef}
-                    stroke="url(#marineLineGrad)"
-                    strokeWidth="1"
-                    strokeDasharray="4 3"
-                    style={{ display: selectedVessel ? 'block' : 'none' }}
-                />
-            </svg>
+            {/* ── Connecting line SVG (portaled to body) ── */}
+            {createPortal(
+                <svg className="marine-line-svg">
+                    <defs>
+                        <linearGradient id="marineLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor={shipColor} stopOpacity="0.7" />
+                            <stop offset="100%" stopColor={shipColor} stopOpacity="0.15" />
+                        </linearGradient>
+                    </defs>
+                    <line
+                        ref={lineRef}
+                        stroke="url(#marineLineGrad)"
+                        strokeWidth="1"
+                        strokeDasharray="4 3"
+                        style={{ display: selectedVessel ? 'block' : 'none' }}
+                    />
+                </svg>,
+                document.body
+            )}
 
             {/* ── Marine Monitor Widget ── */}
             {showPanel && (
@@ -600,8 +604,8 @@ const MarineLayer = ({ showPanel = true }) => {
             </div>
             )}
 
-            {/* ── Vessel popup ── */}
-            {selectedVessel && (
+            {/* ── Vessel popup (portaled to body) ── */}
+            {selectedVessel && createPortal(
                 <div className="marine-popup" style={{
                     left: popupPos.x + 'px', top: popupPos.y + 'px', pointerEvents: 'auto'
                 }}>
@@ -635,7 +639,8 @@ const MarineLayer = ({ showPanel = true }) => {
                             <span className="mp-value">{selectedVessel.course}°</span>
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
 
             {/* ═══════ Styles ═══════ */}
@@ -645,8 +650,8 @@ const MarineLayer = ({ showPanel = true }) => {
                 .marine-layer { position:absolute; inset:0; z-index:4; }
 
                 .marine-line-svg {
-                    position:absolute; inset:0; width:100%; height:100%;
-                    pointer-events:none; z-index:5;
+                    position:fixed; inset:0; width:100%; height:100%;
+                    pointer-events:none; z-index:99998;
                 }
 
                 /* ── Marine Monitor ── */
@@ -684,7 +689,7 @@ const MarineLayer = ({ showPanel = true }) => {
 
                 /* ── Vessel Popup ── */
                 .marine-popup {
-                    position:absolute; z-index:15;
+                    position:fixed; z-index:99999;
                     min-width:200px; max-width:280px;
                     padding:10px 14px;
                     background:rgba(0,0,0,0.85);

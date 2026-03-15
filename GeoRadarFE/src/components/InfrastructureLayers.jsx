@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { useMap } from './Globe';
 
 /* ═══════════════════════════════════════════════════════
@@ -491,8 +492,8 @@ const InfrastructureLayers = () => {
 
     return (
         <div className="infra-layers" style={{ pointerEvents: 'none' }}>
-            {/* ── Popup ── */}
-            {sel && (
+            {/* ── Popup (portaled to body to escape stacking context) ── */}
+            {sel && createPortal(
                 <div className="infra-popup" style={{
                     left: popupPos.x + 'px',
                     top: popupPos.y + 'px',
@@ -531,14 +532,15 @@ const InfrastructureLayers = () => {
                             <div className="ip-note">{sel.props.note}</div>
                         </>
                     )}
-                </div>
+                </div>,
+                document.body
             )}
 
             <style>{`
                 .infra-layers { position:absolute; inset:0; z-index:4; }
 
                 .infra-popup {
-                    position: absolute; z-index: 15;
+                    position: fixed; z-index: 99999;
                     min-width: 220px; max-width: 300px;
                     padding: 10px 14px;
                     background: rgba(0,0,0,0.88);

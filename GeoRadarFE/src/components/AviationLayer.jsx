@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { useMap } from './Globe';
 
 /* ═══════════════════════════════════════════════════════
@@ -430,25 +431,28 @@ const AviationLayer = ({ showPanel = true }) => {
     return (
         <div className="av-layer" style={{ pointerEvents: 'none' }}>
 
-            {/* ── Connecting line SVG (full-screen overlay) ── */}
-            <svg className="av-line-svg">
-                <defs>
-                    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor={selectedFlight ? (COLORS[selectedFlight.flightType] || '#777') : '#777'} stopOpacity="0.7" />
-                        <stop offset="100%" stopColor={selectedFlight ? (COLORS[selectedFlight.flightType] || '#777') : '#777'} stopOpacity="0.15" />
-                    </linearGradient>
-                </defs>
-                <line
-                    ref={lineRef}
-                    stroke="url(#lineGrad)"
-                    strokeWidth="1"
-                    strokeDasharray="4 3"
-                    style={{ display: selectedFlight ? 'block' : 'none' }}
-                />
-            </svg>
+            {/* ── Connecting line SVG (portaled to body) ── */}
+            {createPortal(
+                <svg className="av-line-svg">
+                    <defs>
+                        <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor={selectedFlight ? (COLORS[selectedFlight.flightType] || '#777') : '#777'} stopOpacity="0.7" />
+                            <stop offset="100%" stopColor={selectedFlight ? (COLORS[selectedFlight.flightType] || '#777') : '#777'} stopOpacity="0.15" />
+                        </linearGradient>
+                    </defs>
+                    <line
+                        ref={lineRef}
+                        stroke="url(#lineGrad)"
+                        strokeWidth="1"
+                        strokeDasharray="4 3"
+                        style={{ display: selectedFlight ? 'block' : 'none' }}
+                    />
+                </svg>,
+                document.body
+            )}
 
             {/* ── Aircraft info popup ── */}
-            {selectedFlight && (
+            {selectedFlight && createPortal(
                 <div
                     className="av-popup"
                     style={{
@@ -500,7 +504,8 @@ const AviationLayer = ({ showPanel = true }) => {
                             </span>
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
 
             {/* ── HUD Stats Panel ── */}
@@ -553,14 +558,14 @@ const AviationLayer = ({ showPanel = true }) => {
 
                 /* ── Connecting line SVG ── */
                 .av-line-svg {
-                    position:absolute; inset:0; width:100%; height:100%;
-                    pointer-events:none; z-index:5;
+                    position:fixed; inset:0; width:100%; height:100%;
+                    pointer-events:none; z-index:99998;
                 }
 
                 /* ── Popup ── */
                 .av-popup {
-                    position: absolute;
-                    z-index: 15;
+                    position: fixed;
+                    z-index: 99999;
                     min-width: 200px;
                     padding: 10px 14px;
                     background: rgba(0,0,0,0.82);
