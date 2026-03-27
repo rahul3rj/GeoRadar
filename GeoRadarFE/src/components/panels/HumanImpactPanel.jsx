@@ -70,12 +70,12 @@ const HumanImpactPanel = () => {
                             background: 'rgba(0,0,0,0.3)'
                         }}>
                             <video
-                                src="/Human3D.mp4"
+                                src="/human_pro.mp4"
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }}
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85, filter: 'invert(100%)' }}
                             />
                         </div>
 
