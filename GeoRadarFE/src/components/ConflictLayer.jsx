@@ -7,6 +7,7 @@ import { useMap } from './Globe';
    ═══════════════════════════════════════════════════════ */
 const isLocal = window.location.hostname === 'localhost';
 const API_URL = isLocal ? 'http://localhost:4000/api/conflicts' : '/api/conflicts';
+const STATUS_URL = isLocal ? 'http://localhost:4000/api/conflict-status' : '/api/conflict-status';
 const SUMMARY_URL = isLocal ? 'http://localhost:4000/api/conflict-summary' : '/api/conflict-summary';
 const POLL_INTERVAL = 60000; // 1 minute
 
@@ -250,13 +251,14 @@ const ConflictLayer = () => {
                 const features = map.querySourceFeatures('countries');
                 for (const feat of features) {
                     const fid = feat.id;
-                    if (fid == null || highlightedCountryIds.current.has(fid)) continue;
+                    if (fid == null) continue;
 
                     const name = (feat.properties?.NAME || '').toLowerCase().trim();
                     const nameLong = (feat.properties?.NAME_LONG || '').toLowerCase().trim();
                     const formalEn = (feat.properties?.FORMAL_EN || '').toLowerCase().trim();
 
                     if (countries.has(name) || countries.has(nameLong) || countries.has(formalEn)) {
+                        // Always re-apply — tile reloads silently clear feature-state
                         map.setFeatureState({ source: 'countries', id: fid }, { conflict: true });
                         highlightedCountryIds.current.add(fid);
                     }
@@ -264,20 +266,29 @@ const ConflictLayer = () => {
             } catch { }
         }
 
-        // Debounced — only fire 500ms after last event to batch multiple sourcedata events
+        // Debounced — only fire 300ms after last event to batch multiple sourcedata events
         function debouncedApply() {
             if (debounceTimer) clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(applyHighlights, 500);
+            debounceTimer = setTimeout(applyHighlights, 300);
         }
 
-        // 'idle' fires once after all map rendering is complete (much less frequent than sourcedata)
+        // 'idle' fires once after all map rendering is complete
         map.on('idle', debouncedApply);
         map.on('moveend', debouncedApply);
+
+        // Also catch when countries source tiles finish loading (critical for initial load)
+        function onSourceData(e) {
+            if (e.sourceId === 'countries' && e.isSourceLoaded) {
+                debouncedApply();
+            }
+        }
+        map.on('sourcedata', onSourceData);
 
         return () => {
             if (debounceTimer) clearTimeout(debounceTimer);
             map.off('idle', debouncedApply);
             map.off('moveend', debouncedApply);
+            map.off('sourcedata', onSourceData);
         };
     }, [map]);
 
@@ -508,7 +519,7 @@ const ConflictLayer = () => {
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const data = await res.json();
 
-                if (data.success && data.data) {
+                if (data.success && data.data && data.data.length > 0) {
                     setLive(true);
                     const events = data.data;
 
@@ -523,10 +534,40 @@ const ConflictLayer = () => {
 
                     // Highlight conflict countries on the globe
                     updateCountryHighlights(countriesSet);
+                } else {
+                    // Fallback: /api/conflicts returned 0 events (no ACLED DB data).
+                    // Use /api/conflict-status which has OSINT-derived conflict countries.
+                    await fetchConflictStatusFallback();
                 }
             } catch (e) {
                 console.warn('ConflictLayer: fetch failed:', e.message);
                 setLive(false);
+                // Still try the status fallback for country highlights
+                await fetchConflictStatusFallback();
+            }
+        }
+
+        async function fetchConflictStatusFallback() {
+            try {
+                const res = await fetch(STATUS_URL);
+                if (!res.ok) return;
+                const data = await res.json();
+
+                if (data.conflictList && data.conflictList.length > 0) {
+                    setLive(true);
+                    const countriesSet = new Set(
+                        data.conflictList.map(c => c.country).filter(Boolean)
+                    );
+                    setStats({
+                        total: data.conflictCount || countriesSet.size,
+                        countries: countriesSet.size,
+                        fatalities: 0
+                    });
+                    // Highlight conflict countries on the globe
+                    updateCountryHighlights(countriesSet);
+                }
+            } catch (e) {
+                console.warn('ConflictLayer: status fallback failed:', e.message);
             }
         }
 

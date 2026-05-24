@@ -8,8 +8,9 @@ import React, {
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
+const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
 const MAPTILER_STYLE =
-  "https://api.maptiler.com/maps/019e59b5-cb3d-7d61-a4c6-f1570e7da106/style.json?key=TIN6nuTDoGHbsvnJW9qn";
+  `https://api.maptiler.com/maps/${import.meta.env.VITE_MAPTILER_MAP_DARK}/style.json?key=${MAPTILER_KEY}`;
 
 const COUNTRIES_GEOJSON_URL =
   "https://raw.githubusercontent.com/cB-Abhinav-Gautam/World-Map-India-Complete/master/GeoJson/geo.json";

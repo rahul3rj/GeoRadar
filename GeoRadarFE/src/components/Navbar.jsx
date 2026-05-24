@@ -16,10 +16,11 @@ const MAP_LAYERS = [
     { id: 'night', label: 'NIGHT SAT' },
 ];
 
+const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
 const MAP_LAYER_STYLES = {
-    satellite: 'https://api.maptiler.com/maps/019e59e1-a627-73f8-b11f-0603660f8b12/style.json?key=TIN6nuTDoGHbsvnJW9qn',
-    dark: 'https://api.maptiler.com/maps/019e59b5-cb3d-7d61-a4c6-f1570e7da106/style.json?key=TIN6nuTDoGHbsvnJW9qn',
-    night: 'https://api.maptiler.com/maps/019e59e4-77d7-70b0-b8f3-fd935ad82afc/style.json?key=TIN6nuTDoGHbsvnJW9qn',
+    satellite: `https://api.maptiler.com/maps/${import.meta.env.VITE_MAPTILER_MAP_SATELLITE}/style.json?key=${MAPTILER_KEY}`,
+    dark: `https://api.maptiler.com/maps/${import.meta.env.VITE_MAPTILER_MAP_DARK}/style.json?key=${MAPTILER_KEY}`,
+    night: `https://api.maptiler.com/maps/${import.meta.env.VITE_MAPTILER_MAP_NIGHT}/style.json?key=${MAPTILER_KEY}`,
 };
 
 const PANEL_OPTIONS = [
