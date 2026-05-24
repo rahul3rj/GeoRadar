@@ -17,9 +17,9 @@ const MAP_LAYERS = [
 ];
 
 const MAP_LAYER_STYLES = {
-    satellite: 'https://api.maptiler.com/maps/019ceaad-aa92-7954-a513-bf126ccd29d7/style.json?key=DNvnDzGq038Xaqfp593e',
-    dark: 'https://api.maptiler.com/maps/019cb3d9-3cd7-7b1b-96b0-e1669d297a00/style.json?key=DNvnDzGq038Xaqfp593e',
-    night: 'https://api.maptiler.com/maps/019ceaa4-e9ca-7083-be01-e6c74dfad522/style.json?key=DNvnDzGq038Xaqfp593e',
+    satellite: 'https://api.maptiler.com/maps/019e59e1-a627-73f8-b11f-0603660f8b12/style.json?key=TIN6nuTDoGHbsvnJW9qn',
+    dark: 'https://api.maptiler.com/maps/019e59b5-cb3d-7d61-a4c6-f1570e7da106/style.json?key=TIN6nuTDoGHbsvnJW9qn',
+    night: 'https://api.maptiler.com/maps/019e59e4-77d7-70b0-b8f3-fd935ad82afc/style.json?key=TIN6nuTDoGHbsvnJW9qn',
 };
 
 const PANEL_OPTIONS = [
